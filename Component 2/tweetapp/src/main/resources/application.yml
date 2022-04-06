@@ -1,0 +1,3 @@
+spring:  application:    name: tweet-app  data:    mongodb:      authentication-database: admin      username: ${MONGO_USERNAME:mongoadmin}      password: ${MONGO_PASSWORD:mongodbadmin}      host: ${MONGO_HOST:localhost}      port: ${MONGO_PORT:2000}      database: ${MONGO_DBNAME:tweetapp}      auto-index-creation: true      
+server:
+  port: 8085  servlet:    context-path: /api/v1.0/tweets  
